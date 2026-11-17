@@ -21,12 +21,49 @@ os.makedirs("reports", exist_ok=True)
 logger = setup_logger()
 
 
+
+
 def display_banner():
-    print("\n" + "=" * 55)
-    print("                    NETGUARD")
-    print("          NETWORK SECURITY MONITORING TOOL")
-    print("                    VERSION 1.0")
-    print("=" * 55)
+    import os
+    os.system("clear")
+
+    CYAN = "\033[96m"
+    GREEN = "\033[92m"
+    WHITE = "\033[97m"
+    RESET = "\033[0m"
+    BOLD = "\033[1m"
+
+    print()
+    print(CYAN + BOLD + "  ==================================================" + RESET)
+    print()
+
+    print("       " + CYAN + BOLD + "███╗   ██╗" + GREEN + " ██████╗ " + RESET)
+    print("       " + CYAN + BOLD + "████╗  ██║" + GREEN + "██╔════╝ " + RESET)
+    print("       " + CYAN + BOLD + "██╔██╗ ██║" + GREEN + "██║  ███╗" + RESET)
+    print("       " + CYAN + BOLD + "██║╚██╗██║" + GREEN + "██║   ██║" + RESET)
+    print("       " + CYAN + BOLD + "██║ ╚████║" + GREEN + "╚██████╔╝" + RESET)
+    print("       " + CYAN + BOLD + "╚═╝  ╚═══╝" + GREEN + " ╚═════╝ " + RESET)
+
+    print()
+    print("                    " + WHITE + BOLD + "NG - NetGuard" + RESET)
+    print(CYAN + "  ==================================================" + RESET)
+    print(WHITE + BOLD + "             NETWORK SECURITY MONITOR" + RESET)
+    print(GREEN + "                    VERSION 1.0" + RESET)
+    print(CYAN + "  --------------------------------------------------" + RESET)
+
+    print(GREEN + "  [+] Developed by : n3oluffy" + RESET)
+    print(CYAN + "  [*] Python Cybersecurity Tool" + RESET)
+    print(CYAN + "  [*] TCP/IP | PORT SCANNING" + RESET)
+    print(CYAN + "  [*] SECURITY ANALYSIS | REPORTS" + RESET)
+
+    print(CYAN + "  --------------------------------------------------" + RESET)
+    print(GREEN + BOLD + "  [✓] NetGuard initialized successfully!" + RESET)
+    print(CYAN + "  ==================================================" + RESET)
+    print()
+
+
+
+
 
 
 def display_menu():
