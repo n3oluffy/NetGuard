@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Backup files
+*.bak
+*.backup
+backups/
+*.tar.gz
+
+# Temporary files
+*.tmp
+*.swp
+
+# IDE files
+.vscode/
+.idea/
+
+# System files
+.DS_Store# Generated reports and logs
+reports/*
+logs/*
+!reports/.gitkeep
+!logs/.gitkeep
